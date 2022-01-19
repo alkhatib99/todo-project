@@ -4,26 +4,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+
 </head>
 
 <body>
   <header>
 
-    <div id="top-logo">
-      <img alt="The Logo" src="imgs/logo.png" />
+    <div class="header-logo-div">
+      <img class="header-logo" alt="The Logo" src="CSS/imgs/logo.png" />
     </div>
 
-    <div id="theName">
+    <div class="theName">
+      <h3 class="header-name">
+        <span class="header-name-white-letter">T</span>O <span class="header-name-white-letter">D</span>O
+      </h3>
     </div>
 
-    <div id="nav-bar">
-      <nav>
-        <ul>
-          <li><a href="index.html"><img src="imgs/icons/homeIcon.png" alt="Icon Home"> Home</a></li>
-          <li><a href="About.html"><img src="imgs/icons/aboutIcon.png" alt="Icon About"> About</a></li>
-        </ul>
+    <div class="header-nav-div">
+      <nav class="header-nav">
+        
+        <a class="header-nav-items" href="index.html">
+       
+          Home
+          
+          </a>
+
+        <a class="header-nav-items" href="About.html">
+           About
+        </a>
+
 
       </nav>
     </div>
@@ -31,14 +44,14 @@
   </header>
   <main>
 
-    <section id="note-section">
+    <section class="note-section">
       <h6>
         * Note: When you finish a task just click on CheckBox, then enter a date.
       </h6>
 
     </section>
 
-    <table border="1" style="width: 70%;">
+    <table border="1">
       <thead>
         <tr>
           <th colspan="3">To-Do Table</th>
@@ -54,27 +67,27 @@
         <tr>
           <td class="id-class">1</td>
           <td><input type="checkbox" /> Create Wireframe for Home Page. </td>
-          <td><input type="date" /></td>
+          <td class="table-date-col"><input type="date" /></td>
         </tr>
         <tr>
           <td class="id-class">2</td>
           <td><input type="checkbox" /> Create Wireframe for About Page. </td>
-          <td><input type="date" /></td>
+          <td class="table-date-col"><input type="date" /></td>
         </tr>
         <tr>
           <td class="id-class">3</td>
           <td><input type="checkbox" /> Define the header section include: logo, name, navigation bar.</td>
-          <td><input type="date" /></td>
+          <td class="table-date-col"><input type="date" /></td>
         </tr>
         <tr>
           <td class="id-class">4</td>
           <td><input type="checkbox" /> Define main section with table include at least 3 tasks.</td>
-          <td><input type="date" /></td>
+          <td class="table-date-col"><input type="date" /></td>
         </tr>
         <tr>
           <td class="id-class">5</td>
           <td><input type="checkbox" /> Define footer section with logo, copyright, and social links.</td>
-          <td><input type="date" /></td>
+          <td class="table-date-col"><input type="date" /></td>
         </tr>
       </tbody>
     </table>
@@ -83,12 +96,12 @@
   </main>
 
 
-  <footer border="1" width="100%">
-    <div id="bottom-logo">
-      <img src="imgs/logo.png" alt="Logo">
+  <footer>
+    <div class="footer-logo-div">
+      <img class="footer-logo" src="CSS/imgs/logo.png" alt="Logo">
     </div>
 
-    <div id="copyright">
+    <div class="footer-copyright-div">
       <h5>
         <strong>
           &copy;2022 Developer AbedAlqader | All Rights Reserved.
@@ -99,14 +112,13 @@
 
 
 
-    <div id="social-Links">
-      <nav>
-        <ul id="social-list">
-          <li><a href=""><img src="imgs/icons/facebook.png" alt="facebook icon"></a></li>
-          <li><a href=""><img src="imgs/icons/instagram.png" alt="instagram icon"></a></li>
-          <li><a href=""><img src="imgs/icons/telegram.png" alt="telegram icon"></a></li>
-          <li><a href=""><img src="imgs/icons/twitter.png" alt="twitter icon"></a></li>
-        </ul>
+    <div class="footer-nav-div">
+      <nav class="footer-nav">
+        <a href=""><img class="icon-imgs" src="CSS/imgs/icons/facebook.png" alt="facebook icon"></a>
+        <a href=""><img class="icon-imgs" src="CSS/imgs/icons/instagram.png" alt="instagram icon"></a>
+        <a href=""><img class="icon-imgs" src="CSS/imgs/icons/telegram.png" alt="telegram icon"></a>
+        <a href=""><img class="icon-imgs" src="CSS/imgs/icons/twitter.png" alt="twitter icon"></a>
+
       </nav>
     </div>
   </footer>
