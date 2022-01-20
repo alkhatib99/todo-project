@@ -1,3 +1,4 @@
+'use strict';
 console.log('Welcome to javascript world!')
 var name = prompt('Please enter your name: ');
 var gender = prompt('Please enter your gender (male/female): ');
