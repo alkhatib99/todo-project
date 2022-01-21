@@ -11,7 +11,7 @@ while(age <= 0 )
 var res = confirm('you want to skip the message? ');
 
 gender=gender.trim();
-msg='';
+var msg='';
 if(!res)
 {
     switch(gender)
