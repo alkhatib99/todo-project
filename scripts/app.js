@@ -1,19 +1,65 @@
 'use strict';
 console.log('Welcome to javascript world!')
-var name = prompt('Please enter your name: ');
-var gender = prompt('Please enter your gender (male/female): ');
-var age = prompt('Please enter your age: ');
+
+let name = prompt('Please enter your name: ');
+let gender = prompt('Please enter your gender (male/female): ');
+let age = prompt('Please enter your age: ');
+ageCheck(age);
+
+let ans =[]
+let htmlans=prompt('Do You like The Html/Css Languages (yes/no) ? ' );
+
+checkEmpty(htmlans)
+ans.push(htmlans)
+
+let jsans = prompt('Do youn like the js world (yes/no) ? ' );
+checkEmpty(jsans)
+
+ans.push(jsans)
+
+let tryans = prompt("Do you use the js language before (yes/no)");
+checkEmpty(tryans)
+
+ans.push(tryans)
+
+
+
+
+let res = confirm('you want to skip the message? ');
+
+
+
+let msg='';
+
+const traversrArr = (ans) => {
+for (var i= 0 ; i < ans.length; i++)
+{
+
+    console.log('the answer of question '+ (i+1)+ " : "+ans[i]);
+}
+
+
+}
+
+
+traversrArr(ans)
+
+welcomeMsg();
+function ageCheck (age) 
+{
+
 while(age <= 0 )
 {
      age = prompt('Invalid input, please enter your age again: ');
 
 }
-var res = confirm('you want to skip the message? ');
 
-gender=gender.trim();
-var msg='';
+return age;
+}
+
+function welcomeMsg(){
 if(!res)
-{
+{gender=gender.trim();
     switch(gender)
 
     {
@@ -31,4 +77,13 @@ break;
 
     }
     alert(msg)
+}
+}
+
+ function checkEmpty( input)
+{
+
+    if (input == "" )
+     alert("Invalid Input");
+
 }
