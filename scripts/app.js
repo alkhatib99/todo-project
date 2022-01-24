@@ -9,16 +9,22 @@ ageCheck(age);
 let ans =[]
 let htmlans=prompt('Do You like The Html/Css Languages (yes/no) ? ' );
 
-checkEmpty(htmlans)
+if(checkEmpty(htmlans))
+ans.push("Invalid")
+else
 ans.push(htmlans)
 
 let jsans = prompt('Do youn like the js world (yes/no) ? ' );
-checkEmpty(jsans)
+if(checkEmpty(jsans))
+ans.push("Invalid")
+else
 
 ans.push(jsans)
 
 let tryans = prompt("Do you use the js language before (yes/no)");
-checkEmpty(tryans)
+if(checkEmpty(tryans))
+ans.push("Invalid")
+else
 
 ans.push(tryans)
 
@@ -84,6 +90,7 @@ break;
 {
 
     if (input == "" )
-     alert("Invalid Input");
-
+    return true;
+    else 
+    return false; 
 }
